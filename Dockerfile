@@ -5,7 +5,7 @@ WORKDIR /go/src/github.com/prometheus/blackbox_exporter
 RUN make promu
 RUN make build
 
-FROM        quay.io/prometheus/busybox:latest
+FROM  prom/busybox:latest
 MAINTAINER  The Prometheus Authors <prometheus-developers@googlegroups.com>
 
 COPY --from=0 /go/src/github.com/prometheus/blackbox_exporter/blackbox-exporter  /bin/blackbox_exporter
