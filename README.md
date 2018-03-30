@@ -35,6 +35,8 @@ To view all available command-line flags, run `./blackbox_exporter -h`.
 
 To specify which [configuration file](CONFIGURATION.md) to load, use the `--config.file` flag.
 
+To check config add flag --config.check
+
 Additionally, an [example configuration](example.yml) is also available.
 
 HTTP, HTTPS (via the `http` prober), DNS, TCP socket and ICMP (see permissions section) are currently supported.
